@@ -13,6 +13,7 @@
         <module>dvc-service</module>
         <module>common-service</module>
         <module>scan-transaction-service</module>
+        <module>job-manager-service</module>
     </modules>
 
     <parent>

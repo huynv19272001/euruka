@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/api/dvc/info", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+@RequestMapping(value = "/dvc-service", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 public class DvcController {
 
     private final HCCHauGiangService hccHauGiangService;

@@ -6,6 +6,17 @@ spring:
         name: '@project.artifactId@'
     jackson:
         property-naming-strategy: SNAKE_CASE
+    cloud:
+        gateway:
+            routes:
+                -   id: dvc-service
+                    uri: lb://dvc-service
+                    predicates:
+                        - Path=/dvc-service/**
+                -   id: DEPARTMENT-SERVICE
+                    uri: lb://DEPARTMENT-SERVICE
+                    predicates:
+                        - Path=/departments/**
     security:
         user:
             name: huynv1
